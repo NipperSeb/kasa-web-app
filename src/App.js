@@ -1,7 +1,9 @@
+import Router from "./Components/Router/Router";
+
 function App() {
   return (
     <div className="App">
-      <h1>test</h1>
+      <Router />
     </div>
   );
 }

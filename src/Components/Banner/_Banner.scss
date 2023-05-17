@@ -1,0 +1,53 @@
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 223px;
+  margin: 30px 0;
+  border-radius: 25px;
+  overflow: hidden;
+
+  &__img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      
+  }
+
+  &__title {
+      display: grid;
+      place-content: center;
+      position: absolute;
+      font-size: clamp(1.875rem, 0.5893rem + 2.6786vw, 3rem); 
+      font-weight: 500;
+      color: $color-white;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      background-color: rgba(0, 0, 0, 0.3);
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+  }
+}
+
+// _____ RESPONSIVE _____
+
+@media #{$mobile-screen} {
+  .banner {
+      border-radius: 10px;
+      height: 111px;
+      width: 100%;
+
+      &__img {
+          border-radius: 10px;
+      }
+
+      &__title {
+        justify-content: start;
+          font-size: 1.5rem; 
+          padding-left: 16px;
+        }
+  }
+}
