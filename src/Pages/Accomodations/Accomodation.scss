@@ -61,7 +61,7 @@
   width: 100%;
   column-gap: 4.75rem;
 }
-
+// _____ RESPONSIVE _____
 @media #{$mobile-screen} {
   .reference {
     flex-direction: column;
@@ -100,5 +100,8 @@
     height: 18px;
     margin-left: 0;
     margin-right: 0.5rem;
+  }
+  .collapse {
+    flex-direction: column;
   }
 }

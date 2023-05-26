@@ -23,7 +23,12 @@ export default function Collapse({ title, content }) {
           </ul>
         )}
       </div>
-      {open && <div className="collapse__content"> {content}</div>}
+      {open && (
+        <div className="collapse__content">
+          {" "}
+          <p>{content}</p>
+        </div>
+      )}
     </div>
   );
 }

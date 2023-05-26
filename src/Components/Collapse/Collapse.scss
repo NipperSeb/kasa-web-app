@@ -18,9 +18,23 @@
     background-color: $color-background;
     padding-top: 40px;
     height: 249px;
-    ul,
+    border-radius: 5px;
     p {
       padding-left: 20px;
+      padding-right: 20px;
+      color: $color-text;
+      font-size: 1.12rem;
+    }
+  }
+}
+// _____ RESPONSIVE _____
+@media #{$mobile-screen} {
+  .collapse {
+    &__container {
+      margin-bottom: 25px;
+    }
+    &__content {
+      padding-top: 22px;
     }
   }
 }

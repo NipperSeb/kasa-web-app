@@ -16,7 +16,7 @@ const Accomodations = () => {
     host,
     rating,
     pictures,
-    // description,
+    description,
     equipments,
   } = Datas;
   const range = [1, 2, 3, 4, 5];
@@ -84,7 +84,7 @@ const Accomodations = () => {
         </div>
       </section>
       <section className="collapse">
-        {/* <Collapse title={"Description"} content={(() => <p>{description}</p>}) /> */}
+        <Collapse title={"Description"} content={description} />
 
         <Collapse
           title={"Equipements"}
