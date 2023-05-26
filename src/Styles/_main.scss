@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 
 *,
 ::before,
@@ -9,13 +8,18 @@
   padding: 0;
 }
 
-body{
+body {
   max-width: 1440px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: auto;
 }
 
-h1{
-  font-weight:500;
-  font-size:36px;
+h1 {
+  font-weight: 500;
+  font-size: 36px;
+  color: $color-text;
+}
+
+ul {
+  list-style-type: none;
 }

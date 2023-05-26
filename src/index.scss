@@ -1,9 +1,16 @@
 @import "./Styles/variables";
 @import "./Styles/main";
 
-
 // components
 @import "./Components/Banner/Banner";
+@import "./Components/Gallery/Gallery.scss";
+@import "./Components/Cards/Cards.scss";
+@import "./Components/Header/Header.scss";
+@import "./Components/Footer/Footer.scss";
+@import "./Components/Carrousel/Carrousel.scss";
+@import "./Components/Tags/Tags.scss";
+@import "./Components/Collapse/Collapse.scss";
 
 //pages
-@import "./Pages/Home/Home"
+@import "./Pages/Home/Home";
+@import "./Pages/Accomodations/Accomodation.scss";

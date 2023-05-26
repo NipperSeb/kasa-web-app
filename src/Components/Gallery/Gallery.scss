@@ -1,0 +1,21 @@
+.gallery {
+  background: $color-background;
+  border-radius: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3em 3em 0 3em;
+}
+
+// _____ RESPONSIVE _____
+@media #{$mobile-screen} {
+  .gallery {
+    background: none;
+    padding: 0;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

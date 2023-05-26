@@ -1,0 +1,21 @@
+.tag {
+  font-size: 14px;
+  font-weight: 500;
+  color: $color-white;
+  background-color: $color-text;
+  border-radius: 10px;
+  padding: 0.3rem;
+  width: fit-content;
+  height: 25px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+// _____ RESPONSIVE _____
+@media #{$mobile-screen} {
+  .tag {
+    font-size: 10px;
+  }
+}

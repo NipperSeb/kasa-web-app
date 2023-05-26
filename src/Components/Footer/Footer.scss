@@ -1,0 +1,31 @@
+.footer {
+  background-color: #000000;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  height: 209px;
+  &__logo {
+    padding-top: 10px;
+  }
+  p {
+    font-size: 24px;
+    padding-top: 40px;
+    font-weight: 500;
+    line-height: 17.11px;
+  }
+}
+
+// _____ RESPONSIVE _____
+@media #{$tablet-screen} {
+  .footer p {
+    font-size: 12px;
+  }
+}
+@media #{$mobile-screen} {
+  .footer p {
+    padding-top: 30px;
+  }
+}
