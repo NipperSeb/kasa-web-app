@@ -19,6 +19,8 @@ const Accomodations = () => {
     description,
     equipments,
   } = Datas;
+
+  // a modifier
   const range = [1, 2, 3, 4, 5];
 
   return (
@@ -51,6 +53,7 @@ const Accomodations = () => {
           </div>
 
           <div className="rate__container">
+            {/* {a modifier} */}
             {range.map((rangeElem) =>
               rating >= rangeElem ? (
                 <svg
@@ -84,16 +87,27 @@ const Accomodations = () => {
         </div>
       </section>
       <section className="collapse">
-        <Collapse title={"Description"} content={description} />
+        <Collapse title="Description">
+          <p>{description}</p>
+        </Collapse>
 
-        <Collapse
-          title={"Equipements"}
-          content={equipments.map((items) => (
-            <ul>
-              <li key={`${items}`}>{items}</li>
-            </ul>
-          ))}
-        />
+        <Collapse title="Equipements">
+          <ul>
+            {equipments.map((items, index) => {
+              return <li key={index}>{items}</li>;
+            })}
+          </ul>
+        </Collapse>
+
+        {/* <ul>
+          {equipments.map((items) => {
+            return (
+              <Collapse key={`${items}`} title={"Equipements"}>
+                {items}
+              </Collapse>
+            );
+          })}
+        </ul> */}
       </section>
     </main>
   );

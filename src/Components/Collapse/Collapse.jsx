@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-export default function Collapse({ title, content }) {
+export default function Collapse(props) {
   const [open, setOpen] = useState(false);
 
   //switch open/close :
@@ -12,7 +12,7 @@ export default function Collapse({ title, content }) {
   return (
     <div className="collapse__container">
       <div className="collapse__button" onClick={toggle}>
-        <h2>{title}</h2>
+        <h2>{props.title}</h2>
         {open ? (
           <ul>
             <i className="fa-solid fa-chevron-up"></i>
@@ -23,12 +23,7 @@ export default function Collapse({ title, content }) {
           </ul>
         )}
       </div>
-      {open && (
-        <div className="collapse__content">
-          {" "}
-          <p>{content}</p>
-        </div>
-      )}
+      {open && <div className="collapse__content">{props.children}</div>}
     </div>
   );
 }
