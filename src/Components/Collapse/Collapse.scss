@@ -13,21 +13,30 @@
     font-weight: 500;
     border-radius: 10px;
     padding: 0 1rem;
+    cursor: pointer;
   }
   &__content {
     background-color: $color-background;
-    padding-top: 40px;
-    height: 249px;
+    height: 0px;
+    overflow: hidden;
+    transition: height ease-in-out 0.4s;
     border-radius: 5px;
     p,
     ul {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 20px;
       color: $color-text;
       font-size: 1.12rem;
     }
   }
 }
+
+.fa-chevron-up {
+  transition: 0.4s ease-in-out;
+}
+.fa-chevron-up.rotate {
+  transform: rotate(-180deg);
+}
+
 // _____ RESPONSIVE _____
 @media #{$mobile-screen} {
   .collapse {

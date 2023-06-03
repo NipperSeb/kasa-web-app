@@ -98,16 +98,6 @@ const Accomodations = () => {
             })}
           </ul>
         </Collapse>
-
-        {/* <ul>
-          {equipments.map((items) => {
-            return (
-              <Collapse key={`${items}`} title={"Equipements"}>
-                {items}
-              </Collapse>
-            );
-          })}
-        </ul> */}
       </section>
     </main>
   );
