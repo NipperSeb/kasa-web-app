@@ -20,8 +20,8 @@ const Accomodations = () => {
     equipments,
   } = Datas;
 
-  // a modifier
-  const range = [1, 2, 3, 4, 5];
+  //
+  const star = [1, 2, 3, 4, 5];
 
   return (
     <main>
@@ -53,11 +53,10 @@ const Accomodations = () => {
           </div>
 
           <div className="rate__container">
-            {/* {a modifier} */}
-            {range.map((rangeElem) =>
-              rating >= rangeElem ? (
+            {star.map((numberStar) =>
+              rating >= numberStar ? (
                 <svg
-                  key={rangeElem.toString()}
+                  key={numberStar.toString()}
                   className="star"
                   viewBox="0 0 30 30"
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +69,7 @@ const Accomodations = () => {
                 </svg>
               ) : (
                 <svg
-                  key={rangeElem.toString()}
+                  key={numberStar.toString()}
                   className="star"
                   viewBox="0 0 30 30"
                   xmlns="http://www.w3.org/2000/svg"

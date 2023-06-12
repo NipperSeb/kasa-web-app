@@ -13,6 +13,7 @@ const Carrousel = ({ pictures, title }) => {
 
   return (
     <section className="slide-container">
+      {/* remove chevron if just one picture*/}
       {pictures.length > 1 && (
         <i className="fa-solid fa-chevron-left" onClick={prevSlide}></i>
       )}

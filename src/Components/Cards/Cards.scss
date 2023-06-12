@@ -6,6 +6,7 @@
   overflow: hidden;
   transition: all 0.2s ease-in-out;
   margin-bottom: 3em;
+  height: 340px;
 
   &__img {
     width: 100%;
@@ -24,10 +25,6 @@
     color: #ffffff;
     padding-left: 20px;
   }
-  a {
-    display: block;
-    height: 340px;
-  }
 }
 .container-cards:after {
   content: "";
@@ -44,14 +41,9 @@
   );
 }
 
-// .container-cards a {
-//   display: block;
-//   height:340px;
-// }
-
 .container-cards:hover {
   cursor: pointer;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 // _____ RESPONSIVE _____

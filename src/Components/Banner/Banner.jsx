@@ -8,6 +8,7 @@ export default function Banner() {
   const bannerImg = urlHome ? BannerCoast : BannerMountain;
   const bannerAlt = urlHome ? "Paysage côtier" : "Paysage de montagne";
 
+  // change the text of the banner according to size
   const [windowSize, setWindowSize] = useState([window.innerWidth]);
   useEffect(() => {
     const handleWindowResize = () => {
