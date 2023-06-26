@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.d75786ce.css",
+    "main.js": "/react-gh-pages/static/js/main.3c39ee54.js",
+    "static/media/banner-mountain.png": "/react-gh-pages/static/media/banner-mountain.dc7a08e1faa2e14de0bd.png",
+    "static/media/banner-coast.png": "/react-gh-pages/static/media/banner-coast.1168be13650bb18b456e.png",
+    "index.html": "/react-gh-pages/index.html",
+    "main.d75786ce.css.map": "/react-gh-pages/static/css/main.d75786ce.css.map",
+    "main.3c39ee54.js.map": "/react-gh-pages/static/js/main.3c39ee54.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d75786ce.css",
+    "static/js/main.3c39ee54.js"
+  ]
+}
