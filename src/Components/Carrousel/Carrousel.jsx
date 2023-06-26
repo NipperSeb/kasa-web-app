@@ -5,6 +5,7 @@ const Carrousel = ({ pictures, title }) => {
 
   const nextSlide = () => {
     setCurrent(current === pictures.length - 1 ? 0 : current + 1);
+    console.log(current);
   };
 
   const prevSlide = () => {
